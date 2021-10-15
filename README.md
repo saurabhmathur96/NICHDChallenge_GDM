@@ -3,7 +3,7 @@
 Project website: 
 http://thetruth.ccs.neu.edu/numom2b/index.html
 
-Here are the steps to follow to reproduce the association rules from scratch using the data provided. If you are only interested in the association rules produced in the end you directly access it under the data_source directory ("GDM_Association_Rules_2021_10_13_filtered.csv.zip") and unzip the file.
+Here are the steps to follow to reproduce the association rules from scratch using the data provided. If you are only interested in the association rules produced in the end you can directly access it under the data_source directory ("GDM_Association_Rules_2021_10_13_filtered.csv.zip") and unzip the file.
 
 Pre-requisites
 - Jupyter Notebook
