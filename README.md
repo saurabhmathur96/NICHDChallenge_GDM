@@ -1,4 +1,4 @@
-# Association Rule Based Clinical Data Mining and Risk Prediction
+# Association Rule Based Clinical Data Mining and Risk Prediction for Gestational Diabetes Mellitus (GDM)
 
 Project website: 
 http://thetruth.ccs.neu.edu/numom2b/index.html
