@@ -1,0 +1,46 @@
+1. Download WEKA 3.8 from https://waikato.github.io/weka-wiki/downloading_weka/
+
+2. Open the WEKA GUI Chooser and select Explorer
+
+3. In Weka Explorer, click "Open file..." and select "baseline_data_2021_10_13_AR_Ready.csv". Make sure "Files of Type" is selected to be "CSV data files" so you can see the csv file, and make sure the "Invoke options dialog" option is checked before opening the file.
+
+4. In the pop up window (weka.gui.GenericObjectEditor), under "nominalAttributes", put in: 1-56 (the total number of columns in the file) . Hit OK
+
+5. In the Attributes window, remove all columns EXCEPT the following columns:
+- AgeCat
+- BMI_Cat
+- Race
+- GDM
+- Diabetes_History_Cat
+- PCOS_Cat
+- Gravidity_Cat
+- High_BP_Cat
+- Exercise_Cat
+- Smoking_Cat
+- Drinking_Cat
+- Drug_Cat
+- Poverty_Cat
+- Education_Cat
+
+(one way to do this is to select all these columns, hit invert, then hit remove)
+Make note of the index (No.) associated with the GDM column
+
+6. In one of the menu tabs, go to Associate, and choose Weka/associations/Apriori if it is not already selected.
+
+7. Click on the text input field next to the "Choose" button, a menu that allows you to modify the arguments provided to WEKA associations rules should pop up.
+
+8. In the weka.associations.Apriori menu, keep the arguments default EXCEPT for these ones:
+- car -> Change to True
+- classIndex -> Change to the index of the GDM column
+- lowerBoundMinSupport -> Change to 0.0005
+- minMetric -> Change to 0
+- numRules -> Change to a large number to avoid WEKA from terminating early, we chose 100,000,000
+
+Hit OK
+
+9. Hit Start. WEKA should start mining for association rules and the kiwi the bottom right of the application should start dancing. For us this took about 30 minutes.
+
+10. When the run is finished, copy the ENTIRE log in the Associator output and paste them to a new text file. The "WEKATextProcessing.ipynb" notebook can then be used to read the log and convert the rules into a dataframe. If the number of rules produced is not less than the number specified in numRules, then numRules should be increased.
+
+(Optional, do this if you want to run everything without changing a single line of code)
+11. Place the text file under a directory named "weka_output" and rename it to weka_AR_2020_10_13.txt  
