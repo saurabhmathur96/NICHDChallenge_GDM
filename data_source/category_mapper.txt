@@ -1,0 +1,79 @@
+mapper_dict = {
+    "AgeCat": {
+        0: "No Data",
+        1: "[0-17]",
+        2: "[18-25]",
+        3: "[26-34]",
+        4: "[35-39]",
+        5: "40+"
+    },
+    "BMI_Cat": {
+        0: "No Data",
+        1: "[0-18.5)",
+        2: "[18.5-25)",
+        3: "[25-30)",
+        4: "[30-35)",
+        5: "35+"
+    },
+    "Race": {
+        1: "Non-Hispanic White",
+        2: "Non-Hispanic Black",
+        3: "Hispanic",
+        4: "American Indian",
+        5: "Asian",
+        6: "Native Hawaiian",
+        7: "Other",
+        8: "Multiracial",
+        9: "Missing"
+    },
+    "Diabetes_History_Cat": {
+        0: "Missing Data",
+        1: "No Family DM History",
+        2: "Has Family DM History"
+    },
+    "PCOS_Cat": {
+        0: "Missing Data",
+        1: "No PCOS",
+        2: "Has PCOS"
+    },
+    "High_BP_Cat": {
+        0: "Missing",
+        1: "No High Blood Pressure",
+        2: "Has High Blood Pressure"
+    },
+    "Gravidity_Cat": {
+        0: "Missing",
+        1: "First time Pregnant",
+        2: "Was Pregnant Previously"
+    },
+    'Exercise_Cat': {
+        0: "Missing Data",
+        1: "Low Physical Activity (METs < 450)",
+        2: "High Physical Activity (METs >= 450)"
+    },
+    'Smoking_Cat': {
+        0: "Missing Data",
+        1: "No Tobacco use within 3 months",
+        2: "Tobacco use within 3 months"
+    },
+    'Drinking_Cat': {
+        0: "Missing Data",
+        1: "No Alcohol consumption within 3 months",
+        2: "Consumed Alcohol within 3 months"
+    },
+    'Drug_Cat': {
+        0: "Missing Data",
+        1: "No Drug use within 1 month",
+        2: "Used drug within 1 month"
+    },
+    'Poverty_Cat': {
+        0: "Missing Data",
+        1: "Below Federal poverty Level",
+        2: "Above federal poverty level"
+    },
+    'Education_Cat': {
+        0: "Missing Data",
+        1: "No College Degree",
+        2: "Obtained College Degree"
+    }
+}
